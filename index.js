@@ -15,7 +15,7 @@ app.set('views', path.join(__dirname, 'views'))
 let comments = [
     {
     	id: uuid(),
-        username: 'Todd',
+        username: 'Alex',
         comment: 'lol that is so funny!'
     },
     {
