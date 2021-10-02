@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Comments</title>
+</head>
+<body>
+	<h2>Comments</h2>
+	<ul>
+		<% for( c of comments){ %>
+		<li>
+			<%= c.comment %> - <strong><%= c.username %></strong>
+			<a href="/comments/<%= c.id %>"> details </a>
+		</li>
+		<% } %>
+	</ul>
+	<a href="/comments/new">Create a new comment</a>
+</body>
+</html>
